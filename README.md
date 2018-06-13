@@ -29,3 +29,5 @@ The algorithm uses a principal called backtracking. Let us explain how it works 
 
 Now assume we have some sudoku given. The given digits can not be changed, only the empty fields. We will use a large loop in each iteration use the backtracking algorithm to search the alphabetically next solution and adding it to a list. As soon as we reached the empty sudoku (so every field that was not given is empty) the list of all solutions is finished we just have to output it. 
 
+
+This is not an optimal algorithm for any sudoku but it is easy to implement and will solve most sudokus in a few minutes. Note that it is faster the more entries the sudoku has. What might also be interesting is that this algorithm can easily be implemented with abitrary sizes, it doesn't have to be a 3x3x3 field. However it has to be the multiplication table of a group of size 
