@@ -1,5 +1,5 @@
 # Sudoku-Solver
-Python script for completely solving sudokus using backtracking. Here is an example: 
+This is a python script for completely solving sudokus using backtracking. Here is an example: 
 
 ![Screenshot](example.jpg "Screenshot")
 
