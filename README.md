@@ -1,7 +1,8 @@
 # Sudoku-Solver
-Python script for completely solving sudokus by iterating through all solutions alphabetically. 
+Python script for completely solving sudokus using backtracking. Here is an example: 
 
 ![Screenshot](example.jpg "Screenshot")
+
 
 Let the 81 fields be filled with digits 0,1...8,9. The trivial digit 0 denotes an empty field. At each step of the algorithm we can easily test whether the sudoku is still valid, so whether there are repeated digits in some row, column or block. 
 
@@ -30,4 +31,4 @@ The algorithm uses a principal called backtracking. Let us explain how it works 
 Now assume we have some sudoku given. The given digits can not be changed, only the empty fields. We will use a large loop in each iteration use the backtracking algorithm to search the alphabetically next solution and adding it to a list. As soon as we reached the empty sudoku (so every field that was not given is empty) the list of all solutions is finished we just have to output it. 
 
 
-This is not an optimal algorithm for any sudoku but it is easy to implement and will solve most sudokus in a few minutes. Note that it is faster the more entries the sudoku has. What might also be interesting is that this algorithm can easily be implemented with abitrary sizes, it doesn't have to be a 3x3x3 field. However it has to be the multiplication table of a group of size <p align="center"><img src="/tex/689fe02c147e4655189b9d19e35aeb56.svg?invert_in_darkmode&sanitize=true" align=middle width=16.643353649999998pt height=11.741602949999999pt/></p>
+This is not an optimal algorithm for any sudoku but it is easy to implement and will solve most sudokus in a few minutes. Note that it is faster the more entries the sudoku has. What might also be interesting is that this algorithm can easily be implemented with abitrary sizes, it doesn't have to be a 3x3x3 field. However it has to be the multiplication table of a group of size <img src="/tex/1a5d00fec8c37f600d7dc02f1a3d7c80.svg?invert_in_darkmode&sanitize=true" align=middle width=16.64335364999999pt height=21.839370299999988pt/>.
